@@ -17,4 +17,5 @@ for x in range(len(text)):
         o = o + 1
     elif text[x] == "u" or text[x] == "U":
         u = u + 1
+
 print("a =", (a), "e =", (e), "i =", (i), "o =", (o), "u =", (u))
