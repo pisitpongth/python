@@ -1,0 +1,2 @@
+https://api.chnwt.dev/thai-gold-api/latest
+https://api.chnwt.dev/thai-oil-api/latest
