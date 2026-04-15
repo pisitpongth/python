@@ -1,20 +1,21 @@
 class Inventory:
-    def __init__(self, name="", stock=0):
-        self.__name = name
-        self.__stock = stock
+    name = ""
+    stock = 0
 
-    @property
-    def name(self):
-        return self.__name
+    def __init__(self, name, stock):
+        self.name = name
+        self.stock = stock
 
-    @property
-    def stock(self):
-        return self.__stock
+    def get_name(self):
+        return self.name
+
+    def get_stock(self):
+        return self.stock
 
     def add_stock(self, amount):
         if amount > 0:
-            self.__stock += amount
+            self.stock += amount
 
     def remove_stock(self, amount):
         if amount > 0 and amount <= self.stock:
-            self.__stock -= amount
+            self.stock -= amount
