@@ -1,8 +1,5 @@
 class Inventory:
-    name = ""
-    stock = 0
-
-    def __init__(self, name, stock):
+    def __init__(self, name="", stock=0):
         self.name = name
         self.stock = stock
 
