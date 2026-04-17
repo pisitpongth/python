@@ -14,8 +14,10 @@ class BirthdayCake(Bakery):
         self.message = new_message
 
     def __str__(self):
+        total_price = self.get_unit_price() * self.pound
+
         return (
             f"{super().__str__()}\n"
             f"{self.get_flavor()} birthday cake (message={self.get_message()})\n"
-            f"Total price of Birhtday Cake = {self.get_unit_price()}"
+            f"Total price of Birhtday Cake = {total_price}"
         )
